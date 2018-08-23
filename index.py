@@ -1,7 +1,7 @@
 from assets.python.Model import model 
 
 def main():
-    model.BuildModel()
+    model.BuildModel().run()
 
 if __name__ == '__main__':
     main()
