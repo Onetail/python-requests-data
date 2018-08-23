@@ -15,8 +15,6 @@ class BuildModel:
             print(self.url.text)
         else :
             print("The web have something wrong!")
-        print()
-        print()
-        print()
+        
         print(self.Ft.getJson())
         return 

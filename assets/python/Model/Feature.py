@@ -3,16 +3,13 @@ import json
 from assets.python.Global import Global
 
 class Ft:
-    def __init__(self,url = Global.URL):
-        
-        self.url = url
+    def __init__(self):
+        self.url = Global.URL
         self.header = Global.HEADER
         # TODO: this get url data
         self.data = ""
         # TODO: this get js animator seleium
         self.json = ""
-        
-
 
     def setUrl(self,url):
         self.url = url 
@@ -30,7 +27,6 @@ class Ft:
         # TODO: the any web's tag to find 
         self.json = self.data.text[1:] 
         self.json = self.json[:-1].split(",")
-        
         
         # TODO: return json
         return self.json
